@@ -22,8 +22,14 @@ Desarrollar un programa que utilizando los datos de los archivos medias.csv y mm
 - Reutilizar Codigo
 - Manejo de errores
 
-
 **Extra:**
 - Utilizar [Docker](https://www.docker.com)
 - Utilizar [Black](https://pypi.org/project/black/)
 - Utilizar [Poetry](https://python-poetry.org)
+
+### Para formatear el codigo con black ejecutar:
+
+``` bash
+black challenge.py
+```
+
