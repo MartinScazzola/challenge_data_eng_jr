@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def valid_string_format(string):
     return all(c.isalpha() or c == " " or c == "." for c in string)
 
