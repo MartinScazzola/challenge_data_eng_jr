@@ -22,8 +22,35 @@ Desarrollar un programa que utilizando los datos de los archivos medias.csv y mm
 - Reutilizar Codigo
 - Manejo de errores
 
-
 **Extra:**
 - Utilizar [Docker](https://www.docker.com)
 - Utilizar [Black](https://pypi.org/project/black/)
 - Utilizar [Poetry](https://python-poetry.org)
+
+### Para formatear el codigo con black ejecutar:
+
+- Si black no se encuentra instalado 
+
+``` bash
+pip install black
+```
+
+``` bash
+black challenge.py
+```
+
+### Para correr con docker
+
+- Para buildear el container
+
+``` bash
+docker build -t challenge .
+```
+
+- Para correr el programa en el container
+
+``` bash
+docker run --rm challenge
+```
+
+
