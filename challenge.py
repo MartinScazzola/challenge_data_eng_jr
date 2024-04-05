@@ -10,8 +10,12 @@ def filter_wrong_string_format(df, columns):
 
 
 def main():
-    media = pd.read_csv("media_source.csv").dropna()
-    mmp = pd.read_csv("mmp.csv").dropna()
+    try:
+        media = pd.read_csv("media_source.csv").dropna()
+        mmp = pd.read_csv("mmp.csv").dropna()
+    except FileNotFoundError as e:
+        print(e)
+        return
 
     media = filter_wrong_string_format(
         media, ["app_id", "campaign_name", "media_source", "country"]
