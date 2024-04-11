@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def valid_string_format(string):
-    return all(c.isalpha() or c == " " or c == "." for c in string)
+    return all(c.isalpha() or c == "." for c in string)
 
 
 def filter_wrong_string_format(df, columns):
@@ -18,10 +18,10 @@ def main():
         return
 
     media = filter_wrong_string_format(
-        media, ["app_id", "campaign_name", "media_source", "country"]
+        media, ["app_id"]
     )
     mmp = filter_wrong_string_format(
-        mmp, ["app_id", "campaign_name", "media", "country"]
+        mmp, ["app_id"]
     )
 
     merged = pd.merge(
@@ -56,3 +56,4 @@ def main():
 
 
 main()
+
