@@ -17,12 +17,8 @@ def main():
         print(e)
         return
 
-    media = filter_wrong_string_format(
-        media, ["app_id"]
-    )
-    mmp = filter_wrong_string_format(
-        mmp, ["app_id"]
-    )
+    media = filter_wrong_string_format(media, ["app_id"])
+    mmp = filter_wrong_string_format(mmp, ["app_id"])
 
     merged = pd.merge(
         media,
@@ -56,4 +52,3 @@ def main():
 
 
 main()
-
